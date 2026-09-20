@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Бизнес-тур в Китай · Кантонская выставка · Гуанчжоу — Фошань — Иу</title>
+<style>
+  :root{
+    --bg:#0b0b0f; --panel:#131319; --panel2:#1a1a22; --line:#2a2a35;
+    --text:#e8e6e0; --muted:#a09e9a; --red:#e0252e; --gold:#d4a84b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg); color:var(--text); line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  section{padding:64px 0;border-bottom:1px solid var(--line)}
+  h1,h2,h3{line-height:1.2;font-weight:800}
+  h2{font-size:clamp(26px,4vw,40px);margin-bottom:12px}
+  h3{font-size:18px;margin-bottom:8px}
+  p{color:var(--muted);margin-bottom:12px}
+  .accent{color:var(--red)}
+  .gold{color:var(--gold)}
+  .lead{font-size:18px;color:var(--text)}
+  .muted{color:var(--muted)}
+
+  .hero{min-height:92vh;display:flex;align-items:center;position:relative;
+    background:radial-gradient(1200px 600px at 80% -10%,rgba(224,37,46,.18),transparent 60%),
+               radial-gradient(900px 500px at 10% 110%,rgba(212,168,75,.12),transparent 60%),
+               var(--bg);}
+  .hero .wrap{width:100%}
+  .badge{display:inline-block;padding:6px 14px;border:1px solid var(--red);border-radius:999px;
+    color:var(--red);font-size:13px;letter-spacing:.4px;margin-bottom:22px;font-weight:600}
+  .hero h1{font-size:clamp(40px,7vw,76px);letter-spacing:-1px;margin-bottom:8px}
+  .hero .sub{font-size:clamp(18px,3vw,26px);color:var(--text);font-weight:600;margin-bottom:18px}
+  .stats{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 36px}
+  .stat{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:16px 22px}
+  .stat b{display:block;font-size:24px;color:var(--gold)}
+  .stat span{font-size:13px;color:var(--muted)}
+  .btn{display:inline-block;padding:15px 34px;border-radius:12px;font-weight:700;text-decoration:none;
+    font-size:17px;transition:.15s;text-align:center;margin:6px 4px;white-space:nowrap}
+  .btn-red{background:var(--red);color:#fff}
+  .btn-red:hover{background:#ff2f3b;transform:translateY(-1px)}
+  .btn-ghost{border:1px solid var(--line);color:var(--text)}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+  @media(max-width:560px){.btn{display:block;width:100%;margin:8px 0}}
+
+  .grid{display:grid;gap:16px;margin-top:28px}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:760px){.g3,.g2{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .card h3{color:var(--text)}
+  .card .tag{display:inline-block;font-size:12px;color:var(--gold);border:1px solid var(--gold);
+    border-radius:6px;padding:2px 8px;margin-bottom:10px;font-weight:700}
+  ul{list-style:none;margin-top:8px}
+  li{color:var(--muted);padding:5px 0 5px 20px;position:relative;font-size:15px}
+  li::before{content:"";position:absolute;left:4px;top:14px;width:6px;height:6px;border-radius:50%;
+    background:var(--red)}
+
+  .day{display:flex;gap:18px;background:var(--panel);border:1px solid var(--line);
+    border-radius:16px;padding:20px;margin-bottom:12px}
+  .day .n{flex:0 0 64px;text-align:center}
+  .day .n b{display:block;font-size:28px;color:var(--red)}
+  .day .n span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+  .day .c h3{margin-bottom:6px}
+  .day .c p{margin-bottom:0}
+
+  .tbl{width:100%;border-collapse:collapse;margin-top:24px;font-size:15px}
+  .tbl th,.tbl td{border:1px solid var(--line);padding:12px 14px;text-align:left;vertical-align:top}
+  .tbl th{background:var(--panel2);color:var(--gold);font-weight:700}
+  .tbl td{color:var(--muted)}
+  .tbl td b{color:var(--text)}
+
+  .note{border-left:3px solid var(--gold);background:var(--panel2);border-radius:0 12px 12px 0;
+    padding:14px 18px;margin-top:20px;color:var(--muted)}
+  .note b{color:var(--gold)}
+
+  footer{padding:40px 0;text-align:center;color:var(--muted);font-size:14px}
+  footer a{color:var(--gold);text-decoration:none}
+
+  .lang{display:inline-block;background:var(--panel);
+    border:1px solid var(--gold);color:var(--gold);padding:9px 18px;border-radius:999px;
+    box-sizing:border-box;line-height:1.2;
+    font-weight:700;font-size:14px;text-decoration:none;letter-spacing:.5px}
+  .lang:hover{background:var(--gold);color:#0b0b0f}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <div style="display:flex;justify-content:flex-end;margin-bottom:6px"><a class="lang" href="index-ky.html">КЫРГЫЗЧА</a></div>
+    <span class="badge">140-я Кантонская ярмарка · Осень 2026</span>
+    <h1>Бизнес-тур в Китай</h1>
+    <div class="sub">Кантонская выставка · Фабрики · Оптовые рынки<br>
+      <span class="gold">Гуанчжоу → Фошань → Иу</span></div>
+    <p class="lead" style="margin-top:10px;color:var(--gold)">📍 Бишкек, ул. Исы Ахунбаева 180</p>
+    <p class="lead">Найдём надёжных поставщиков, проведём переговоры напрямую с фабриками и покажем актуальные товары рынка — всё под ключ, с переводчиком на каждом шагу.</p>
+    <div class="stats">
+      <div class="stat"><b>10 дней</b><span>полное сопровождение</span></div>
+      <div class="stat"><b>8 мест</b><span>малая группа</span></div>
+      <div class="stat"><b>$1000</b><span>наш сервис с человека</span></div>
+    </div>
+    <a href="#contact" class="btn btn-red">Забронировать место</a>
+    <a href="#program" class="btn btn-ghost">Программа тура</a>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <h2>Что такое <span class="accent">Кантонская выставка</span></h2>
+    <p class="lead">Крупнейшая в мире выставка импорта и экспорта. Проходит в Гуанчжоу дважды в год и собирает сотни тысяч поставщиков и покупателей со всего мира.</p>
+    <p>Участие открывает отличные возможности для установления новых деловых контактов, поиска надёжных партнёров и знакомства с последними тенденциями международной торговли.</p>
+
+    <h3 style="margin-top:36px">140-я сессия · 15 октября — 4 ноября 2026</h3>
+    <p>Выставочный комплекс Pazhou, Гуанчжоу. Ярмарка делится на три фазы — в каждой свои категории товаров.</p>
+
+    <table class="tbl">
+      <tr>
+        <th>Фаза 1<br>15–19 октября</th>
+        <th>Фаза 2<br>23–27 октября</th>
+        <th>Фаза 3<br>31 октября – 4 ноября</th>
+      </tr>
+      <tr>
+        <td>
+          <b>Электроника</b><br>Информационные товары<br>Бытовая техника<br>
+          Машины и оборудование<br>Средства транспорта<br>Строительное оборудование и материалы<br>
+          Инструменты и оборудование<br>Промышленное оборудование
+        </td>
+        <td>
+          <b>Товары для дома</b><br>Мебель<br>Подарки<br>Декор<br>Посуда<br>
+          Ювелирные изделия и украшения<br>Строительные и отделочные материалы<br>Кухонная и столовая утварь
+        </td>
+        <td>
+          <b>Одежда</b><br>Текстиль<br>Обувь<br>Игрушки<br>Спортивные товары<br>
+          Товары для детей<br>Здоровье и медицинские товары<br>Продукты питания и напитки
+        </td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<section id="benefits">
+  <div class="wrap">
+    <h2>Что вы <span class="accent">получите</span> в туре</h2>
+    <div class="grid g2">
+      <div class="card">
+        <span class="tag">ПОСТАВЩИКИ</span>
+        <h3>Поиск надёжных поставщиков</h3>
+        <p>Найдём проверенных партнёров, обсудим условия сотрудничества и поможем заключить выгодные контракты.</p>
+      </div>
+      <div class="card">
+        <span class="tag">ФАБРИКИ</span>
+        <h3>Переговоры напрямую с фабриками</h3>
+        <p>Личное знакомство и прямые переговоры с производителями без посредников — лучшие условия и цены.</p>
+      </div>
+      <div class="card">
+        <span class="tag">ТОВАРЫ</span>
+        <h3>Самые актуальные и трендовые товары</h3>
+        <p>Первыми увидите новинки рынка и получите лучшие цены напрямую от фабрик.</p>
+      </div>
+      <div class="card">
+        <span class="tag">РАЗВИТИЕ</span>
+        <h3>Новые идеи для развития бизнеса</h3>
+        <p>Вдохновение, новые направления рынка и расширение возможностей вашего бизнеса.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cities">
+  <div class="wrap">
+    <h2>Три города — <span class="accent">три ниши</span></h2>
+    <p>Индивидуальный подход к каждому клиенту: до поездки лично обсуждаем, какие товары и направления вам актуальны, и под это строим маршрут — вы идёте только в нужные вам точки.</p>
+    <div class="grid g3">
+      <div class="card">
+        <span class="tag">ГУАНЧЖОУ</span>
+        <h3>Кантонская выставка</h3>
+        <ul>
+          <li>Электроника и информационные товары</li>
+          <li>Бытовая техника</li>
+          <li>Машины и оборудование</li>
+          <li>Средства транспорта</li>
+          <li>Инструменты и промышленное оборудование</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag">ФОШАНЬ</span>
+        <h3>Фабрики и рынки</h3>
+        <ul>
+          <li>Мебель</li>
+          <li>Строительные материалы</li>
+          <li>Люстры и декор</li>
+          <li>Отделочные материалы</li>
+          <li>Экскурсии по заводам</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag">ИУ</span>
+        <h3>Оптовый рынок №1</h3>
+        <ul>
+          <li>Хозтовары</li>
+          <li>Техника</li>
+          <li>Мелочёвка и аксессуары</li>
+          <li>Детская одежда</li>
+          <li>Электроника, зарядки, запчасти</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note"><b>Yiwu International Trade City</b> — 5 огромных зданий, где большинство продавцов — прямые поставщики. Отель в 5 минутах от рынка, чтобы успеть максимум.</div>
+  </div>
+</section>
+
+<section id="program">
+  <div class="wrap">
+    <h2>Программа <span class="accent">10 дней</span></h2>
+    <div class="grid" style="margin-top:24px">
+      <div class="day"><div class="n"><b>1</b><span>день</span></div><div class="c">
+        <h3>Гуанчжоу — прилёт</h3>
+        <p>Встреча в аэропорту, трансфер, заселение в отель, покупка SIM-карт и настройка VPN. Совместный ужин, знакомство, вечерняя прогулка.</p>
+      </div></div>
+      <div class="day"><div class="n"><b>2</b><span>день</span></div><div class="c">
+        <h3>Кантонская выставка</h3>
+        <p>Завтрак в отеле, выдача SIM-карт, озвучка маршрута. Заходим в выставочный комплекс — гуляете по павильонам, мы рядом на подхвате. Вечер — по желанию Кантонская башня (за свой счёт).</p>
+      </div></div>
+      <div class="day"><div class="n"><b>3–4</b><span>день</span></div><div class="c">
+        <h3>Гуанчжоу — выставка</h3>
+        <p>Продолжаем выставку: электроника, техника, инструменты, оборудование. Вечером ужин и разбор — кто что нашёл, кому какие поставщики нужны дальше.</p>
+      </div></div>
+      <div class="day"><div class="n"><b>5–6</b><span>день</span></div><div class="c">
+        <h3>Фошань — фабрики</h3>
+        <p>Переезд. Заводы и рынки: мебель, стройматериалы, люстры. Экскурсии по фабрикам с нашими знакомыми китайцами. Вечер — ужин с китайскими партнёрами.</p>
+      </div></div>
+      <div class="day"><div class="n"><b>7–9</b><span>день</span></div><div class="c">
+        <h3>Иу — оптовые рынки</h3>
+        <p>5 торговых зданий: хозтовары, техника, мелочёвка, детская одежда, электроника, зарядки, аксессуары, запчасти. Прямые поставщики, договариваемся о закупках.</p>
+      </div></div>
+      <div class="day"><div class="n"><b>10</b><span>день</span></div><div class="c">
+        <h3>Выезд</h3>
+        <p>Завтрак, трансфер в аэропорт с запасом (аэропорт огромный), проводы. Собираем обратную связь и отзывы.</p>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section id="price">
+  <div class="wrap">
+    <h2>Что входит в <span class="gold">$1000</span></h2>
+    <div class="grid g2">
+      <div class="card">
+        <h3>✅ Входит в стоимость</h3>
+        <ul>
+          <li>Сопровождение на всём маршруте</li>
+          <li>Переводчик: китайский + английский + русский</li>
+          <li>Организация встреч с фабриками и поставщиками</li>
+          <li>Экскурсии по заводам</li>
+          <li>Маршрут и планирование под вашу нишу</li>
+          <li>Встреча и проводы в аэропорту</li>
+          <li>Организация трансферов и SIM-карт</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>❌ Оплачивается отдельно</h3>
+        <ul>
+          <li>Авиаперелёт (туда-обратно)</li>
+          <li>Отель (завтраки включены)</li>
+          <li>Виза (~$240)</li>
+          <li>Обеды и ужины</li>
+          <li>SIM-карта (~170 юаней)</li>
+          <li>Транспорт на месте (заказываем мы, оплата ваша)</li>
+          <li>Личные траты и вход на башню</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note"><b>Как работает оплата на месте:</b> вы передаёте деньги нам, мы платим за такси, трансферы и SIM-карты. В китайских платёжных системах вы не участвуете — всё берём на себя.</div>
+    <div class="note"><b>Под ключ — полностью:</b> можем взять на себя всё — от визы и авиабилетов до отеля, питания и полной программы. Хотите вообще ни о чём не думать? Обсудим индивидуально и соберём поездку целиком под ваши задачи.</div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <h2>Почему <span class="accent">мы</span></h2>
+    <div class="grid g3">
+      <div class="card">
+        <h3>Языковой барьер закрыт</h3>
+        <p>Китайский, английский, русский и кыргызский — переговоры с фабриками ведём сами, вы просто выбираете товар и условия.</p>
+      </div>
+      <div class="card">
+        <h3>Опыт в бизнесе с Китаем</h3>
+        <p>12+ лет работы с поставщиками, знакомые фабрики и проверенные контакты в Гуанчжоу, Фошане и Иу.</p>
+      </div>
+      <div class="card">
+        <h3>Индивидуальный подход</h3>
+        <p>Заранее обсуждаем с каждым клиентом, что ему актуально, и строим маршрут под его нишу — а не ведём всех по одному шаблону.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap" style="text-align:center">
+    <h2>Забронировать <span class="accent">место</span></h2>
+    <p class="lead">Вылет 15 октября · Всего 8 мест · Предоплата 50%</p>
+    <div style="margin:28px 0">
+      <a href="https://www.instagram.com/tariel_abdykasymov/" target="_blank" class="btn btn-red">Написать в Instagram</a>
+      <a href="https://wa.me/996500958989" target="_blank" class="btn btn-ghost">Написать в WhatsApp</a>
+    </div>
+    <p class="muted">Instagram: @tariel_abdykasymov · @motocity.kg</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Бизнес-тур в Китай · Кантонская выставка 2026 · Гуанчжоу — Фошань — Иу<br>
+    ул. Исы Ахунбаева 180, Бишкек · <a href="https://wa.me/996500958989" target="_blank">WhatsApp: +996 500 958 989</a><br>
+    <a href="#">Наверх ↑</a>
+  </div>
+</footer>
+
+</body>
+</html>

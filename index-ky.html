@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Кытайга бизнес-тур · Кантон көргөзмөсү · Гуанчжоу — Фошань — Иу</title>
+<style>
+  :root{
+    --bg:#0b0b0f; --panel:#131319; --panel2:#1a1a22; --line:#2a2a35;
+    --text:#e8e6e0; --muted:#a09e9a; --red:#e0252e; --gold:#d4a84b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg); color:var(--text); line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  section{padding:64px 0;border-bottom:1px solid var(--line)}
+  h1,h2,h3{line-height:1.2;font-weight:800}
+  h2{font-size:clamp(26px,4vw,40px);margin-bottom:12px}
+  h3{font-size:18px;margin-bottom:8px}
+  p{color:var(--muted);margin-bottom:12px}
+  .accent{color:var(--red)}
+  .gold{color:var(--gold)}
+  .lead{font-size:18px;color:var(--text)}
+  .muted{color:var(--muted)}
+
+  .hero{min-height:92vh;display:flex;align-items:center;position:relative;
+    background:radial-gradient(1200px 600px at 80% -10%,rgba(224,37,46,.18),transparent 60%),
+               radial-gradient(900px 500px at 10% 110%,rgba(212,168,75,.12),transparent 60%),
+               var(--bg);}
+  .hero .wrap{width:100%}
+  .badge{display:inline-block;padding:6px 14px;border:1px solid var(--red);border-radius:999px;
+    color:var(--red);font-size:13px;letter-spacing:.4px;margin-bottom:22px;font-weight:600}
+  .hero h1{font-size:clamp(40px,7vw,76px);letter-spacing:-1px;margin-bottom:8px}
+  .hero .sub{font-size:clamp(18px,3vw,26px);color:var(--text);font-weight:600;margin-bottom:18px}
+  .stats{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 36px}
+  .stat{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:16px 22px}
+  .stat b{display:block;font-size:24px;color:var(--gold)}
+  .stat span{font-size:13px;color:var(--muted)}
+  .btn{display:inline-block;padding:15px 34px;border-radius:12px;font-weight:700;text-decoration:none;
+    font-size:17px;transition:.15s;text-align:center;margin:6px 4px;white-space:nowrap}
+  .btn-red{background:var(--red);color:#fff}
+  .btn-red:hover{background:#ff2f3b;transform:translateY(-1px)}
+  .btn-ghost{border:1px solid var(--line);color:var(--text)}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+  @media(max-width:560px){.btn{display:block;width:100%;margin:8px 0}}
+
+  .grid{display:grid;gap:16px;margin-top:28px}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:760px){.g3,.g2{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .card h3{color:var(--text)}
+  .card .tag{display:inline-block;font-size:12px;color:var(--gold);border:1px solid var(--gold);
+    border-radius:6px;padding:2px 8px;margin-bottom:10px;font-weight:700}
+  ul{list-style:none;margin-top:8px}
+  li{color:var(--muted);padding:5px 0 5px 20px;position:relative;font-size:15px}
+  li::before{content:"";position:absolute;left:4px;top:14px;width:6px;height:6px;border-radius:50%;
+    background:var(--red)}
+
+  .day{display:flex;gap:18px;background:var(--panel);border:1px solid var(--line);
+    border-radius:16px;padding:20px;margin-bottom:12px}
+  .day .n{flex:0 0 64px;text-align:center}
+  .day .n b{display:block;font-size:28px;color:var(--red)}
+  .day .n span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+  .day .c h3{margin-bottom:6px}
+  .day .c p{margin-bottom:0}
+
+  .tbl{width:100%;border-collapse:collapse;margin-top:24px;font-size:15px}
+  .tbl th,.tbl td{border:1px solid var(--line);padding:12px 14px;text-align:left;vertical-align:top}
+  .tbl th{background:var(--panel2);color:var(--gold);font-weight:700}
+  .tbl td{color:var(--muted)}
+  .tbl td b{color:var(--text)}
+
+  .note{border-left:3px solid var(--gold);background:var(--panel2);border-radius:0 12px 12px 0;
+    padding:14px 18px;margin-top:20px;color:var(--muted)}
+  .note b{color:var(--gold)}
+
+  footer{padding:40px 0;text-align:center;color:var(--muted);font-size:14px}
+  footer a{color:var(--gold);text-decoration:none}
+
+  .lang{display:inline-block;background:var(--panel);
+    border:1px solid var(--gold);color:var(--gold);padding:9px 18px;border-radius:999px;
+    box-sizing:border-box;line-height:1.2;
+    font-weight:700;font-size:14px;text-decoration:none;letter-spacing:.5px}
+  .lang:hover{background:var(--gold);color:#0b0b0f}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <div style="display:flex;justify-content:flex-end;margin-bottom:6px"><a class="lang" href="index.html">РУССКИЙ</a></div>
+    <span class="badge">140-Кантон жарманкеси · Күз 2026</span>
+    <h1>Кытайга бизнес-тур</h1>
+    <div class="sub">Кантон көргөзмөсү · Фабрикалар · Дүң базарлар<br>
+      <span class="gold">Гуанчжоу → Фошань → Иу</span></div>
+    <p class="lead">Ишенимдүү жеткирүүчүлөрдү табабыз, фабрикалар менен түздөн-түз сүйлөшүүлөрдү жүргүзөбүз жана рыноктун актуалдуу товарларын көрсөтөбүз — баары ачкыч тапшыруу менен, ар бир кадамда котормочу менен.</p>
+    <div class="stats">
+      <div class="stat"><b>10 күн</b><span>толук коштоо</span></div>
+      <div class="stat"><b>8 орун</b><span>кичине топ</span></div>
+      <div class="stat"><b>$1000</b><span>биздин сервис, киши башына</span></div>
+    </div>
+    <a href="#contact" class="btn btn-red">Орунду брондоо</a>
+    <a href="#program" class="btn btn-ghost">Турдун программасы</a>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <h2>Кантон көргөзмөсү <span class="accent">деген эмне</span></h2>
+    <p class="lead">Дүйнөдөгү эң ири импорт жана экспорт көргөзмөсү. Гуанчжоуда жылына эки жолу өтүп, дүйнө жүзүнөн жүз миңдеген жеткирүүчүлөрдү жана сатып алуучуларды чогултат.</p>
+    <p>Катышуу жаңы ишкердик байланыштарды түзүүгө, ишенимдүү өнөктөштөрдү табууга жана эл аралык сооданын акыркы тенденциялары менен таанышууга эң сонун мүмкүнчүлүктөрдү ачат.</p>
+
+    <h3 style="margin-top:36px">140-сессия · 15-октябрь — 4-ноябрь 2026</h3>
+    <p>Pazhou көргөзмө комплекси, Гуанчжоу. Жарманке үч фазага бөлүнөт — ар биринде өзүнүн товар категориялары.</p>
+
+    <table class="tbl">
+      <tr>
+        <th>Фаза 1<br>15–19 октябрь</th>
+        <th>Фаза 2<br>23–27 октябрь</th>
+        <th>Фаза 3<br>31 октябрь – 4 ноябрь</th>
+      </tr>
+      <tr>
+        <td>
+          <b>Электроника</b><br>Маалыматтык товарлар<br>Турмуш-тиричилик техникасы<br>
+          Машиналар жана жабдуулар<br>Транспорт каражаттары<br>Курулуш жабдуулары жана материалдар<br>
+          Инструменттер жана жабдуулар<br>Өнөр жай жабдуулары
+        </td>
+        <td>
+          <b>Үй товарлары</b><br>Эмерек<br>Белектер<br>Декор<br>Идиш-аяк<br>
+          Зергердик буюмдар жана жасалгалар<br>Курулуш жана жасалга материалдары<br>Ашкана жана стол идиштери
+        </td>
+        <td>
+          <b>Кийим</b><br>Текстиль<br>Бут кийим<br>Оюнчуктар<br>Спорттук товарлар<br>
+          Балдарга товарлар<br>Ден соолук жана медициналык товарлар<br>Тамак-аш жана суусундуктар
+        </td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<section id="benefits">
+  <div class="wrap">
+    <h2>Турда эмне <span class="accent">аласыз</span></h2>
+    <div class="grid g2">
+      <div class="card">
+        <span class="tag">ЖЕТКИРҮҮЧҮЛӨР</span>
+        <h3>Ишенимдүү жеткирүүчүлөрдү издөө</h3>
+        <p>Текшерилген өнөктөштөрдү табабыз, кызматташуунун шарттарын талкуулайбыз жана пайдалуу келишимдерди түзүүгө жардам беребиз.</p>
+      </div>
+      <div class="card">
+        <span class="tag">ФАБРИКАЛАР</span>
+        <h3>Фабрикалар менен түздөн-түз сүйлөшүү</h3>
+        <p>Ортомчуларсыз өндүрүүчүлөр менен жеке таанышуу жана түз сүйлөшүүлөр — эң жакшы шарттар жана баалар.</p>
+      </div>
+      <div class="card">
+        <span class="tag">ТОВАРЛАР</span>
+        <h3>Эң актуалдуу жана тренд товарлар</h3>
+        <p>Рыноктун жаңылыктарын биринчилерден болуп көрүп, фабрикалардан түздөн-түз эң жакшы бааларды аласыз.</p>
+      </div>
+      <div class="card">
+        <span class="tag">ӨНҮГҮҮ</span>
+        <h3>Бизнести өнүктүрүү үчүн жаңы идеялар</h3>
+        <p>Дем-күч, рыноктун жаңы багыттары жана бизнесиңиздин мүмкүнчүлүктөрүн кеңейтүү.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cities">
+  <div class="wrap">
+    <h2>Үч шаар — <span class="accent">үч багыт</span></h2>
+    <p>Ар бир кардарга жеке мамиле: сапар алдында кайсы товарлар жана багыттар сизге актуалдуу экенин жеке талкуулайбыз, ошого жараша маршрут түзөбүз — сиз өзүңүзгө керектүү жерлерге гана барасыз.</p>
+    <div class="grid g3">
+      <div class="card">
+        <span class="tag">ГУАНЧЖОУ</span>
+        <h3>Кантон көргөзмөсү</h3>
+        <ul>
+          <li>Электроника жана маалыматтык товарлар</li>
+          <li>Турмуш-тиричилик техникасы</li>
+          <li>Машиналар жана жабдуулар</li>
+          <li>Транспорт каражаттары</li>
+          <li>Инструменттер жана өнөр жай жабдуулары</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag">ФОШАНЬ</span>
+        <h3>Фабрикалар жана базарлар</h3>
+        <ul>
+          <li>Эмерек</li>
+          <li>Курулуш материалдары</li>
+          <li>Люстралар жана декор</li>
+          <li>Жасалга материалдары</li>
+          <li>Заводдорго экскурсиялар</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag">ИУ</span>
+        <h3>№1 дүң базар</h3>
+        <ul>
+          <li>Чарбалык товарлар</li>
+          <li>Техника</li>
+          <li>Майда буюмдар жана аксессуарлар</li>
+          <li>Балдар кийими</li>
+          <li>Электроника, заряддагычтар, тетиктер</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note"><b>Yiwu International Trade City</b> — 5 чоң имарат, сатуучулардын көбү — түз жеткирүүчүлөр. Базардан 5 мүнөттүк жолдо мейманкана, максималдуу жетишүү үчүн.</div>
+  </div>
+</section>
+
+<section id="program">
+  <div class="wrap">
+    <h2>Программа <span class="accent">10 күн</span></h2>
+    <div class="grid" style="margin-top:24px">
+      <div class="day"><div class="n"><b>1</b><span>күн</span></div><div class="c">
+        <h3>Гуанчжоу — келүү</h3>
+        <p>Аэропортто тосуп алуу, трансфер, мейманканага жайгашуу, SIM-карталарды сатып алуу жана VPN орнотуу. Биргеликте кечки тамак, таанышуу, кечки сейилдөө.</p>
+      </div></div>
+      <div class="day"><div class="n"><b>2</b><span>күн</span></div><div class="c">
+        <h3>Кантон көргөзмөсү</h3>
+        <p>Мейманканада эртең мененки тамак, SIM-карталарды таратуу, маршрутту айтып берүү. Көргөзмө комплексине киребиз — павильондордо өзүңүз сейилдейсиз, биз жакын жардам беребиз. Кечинде — каалоо боюнча Кантон мунарасы (өз эсебиңизден).</p>
+      </div></div>
+      <div class="day"><div class="n"><b>3–4</b><span>күн</span></div><div class="c">
+        <h3>Гуанчжоу — көргөзмө</h3>
+        <p>Көргөзмөнү улантабыз: электроника, техника, инструменттер, жабдуулар. Кечинде кечки тамак жана талкуу — ким эмне тапты, кимге кайсы жеткирүүчүлөр керек.</p>
+      </div></div>
+      <div class="day"><div class="n"><b>5–6</b><span>күн</span></div><div class="c">
+        <h3>Фошань — фабрикалар</h3>
+        <p>Көчүү. Заводдор жана базарлар: эмерек, курулуш материалдары, люстралар. Тааныш кытайлар менен фабрикаларга экскурсия. Кечинде — кытай өнөктөштөрү менен кечки тамак.</p>
+      </div></div>
+      <div class="day"><div class="n"><b>7–9</b><span>күн</span></div><div class="c">
+        <h3>Иу — дүң базарлар</h3>
+        <p>5 соода имараты: чарбалык товарлар, техника, майда буюмдар, балдар кийими, электроника, заряддагычтар, аксессуарлар, тетиктер. Түз жеткирүүчүлөр, сатып алууларды сүйлөшөбүз.</p>
+      </div></div>
+      <div class="day"><div class="n"><b>10</b><span>күн</span></div><div class="c">
+        <h3>Чыгуу</h3>
+        <p>Эртең мененки тамак, аэропортко запас менен трансфер (аэропорт чоң), узатуу. Пикирлерди жана сын-пикирлерди чогултабыз.</p>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section id="price">
+  <div class="wrap">
+    <h2><span class="gold">$1000</span>га эмне кирет</h2>
+    <div class="grid g2">
+      <div class="card">
+        <h3>✅ Баага кирет</h3>
+        <ul>
+          <li>Бүт маршрут боюнча коштоо</li>
+          <li>Котормочу: кытайча + англисче + орусча</li>
+          <li>Фабрикалар жана жеткирүүчүлөр менен жолугушууларды уюштуруу</li>
+          <li>Заводдорго экскурсиялар</li>
+          <li>Сиздин багыт боюнча маршрут жана пландоо</li>
+          <li>Аэропортто тосуп алуу жана узатуу</li>
+          <li>Трансферлерди жана SIM-карталарды уюштуруу</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>❌ Өзүнчө төлөнөт</h3>
+        <ul>
+          <li>Авиабилет (барып-келүү)</li>
+          <li>Мейманкана (эртең мененки тамак кирет)</li>
+          <li>Виза (~$240)</li>
+          <li>Түшкү жана кечки тамактар</li>
+          <li>SIM-карта (~170 юань)</li>
+          <li>Жергиликтүү транспорт (заказ беребиз, төлөйсүз)</li>
+          <li>Жеке чыгымдар жана мунарага кирүү</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note"><b>Жергиликтүү төлөм кантип иштейт:</b> акчаны бизге бересиз, биз такси, трансфер жана SIM-карталар үчүн төлөйбүз. Кытайдын төлөм системаларына сиз катышпайсыз — баарын өзүбүз алабыз.</div>
+    <div class="note"><b>Толугу менен ачкыч тапшыруу:</b> баарын өзүбүз алабыз — виза жана авиабилеттерден тартып мейманкана, тамактануу жана толук программага чейин. Эч нерсе жөнүндө ойлонгуңуз келбейби? Жеке талкуулайбыз жана сапарды толугу менен сиздин максаттарыңызга ылайык чогултабыз.</div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <h2>Эмне үчүн <span class="accent">биз</span></h2>
+    <div class="grid g3">
+      <div class="card">
+        <h3>Тил тоскоолдугу жабык</h3>
+        <p>Кытайча, англисче, орусча жана кыргызча — фабрикалар менен сүйлөшүүлөрдү өзүбүз жүргүзөбүз, сиз жөн гана товарды жана шартты тандайсыз.</p>
+      </div>
+      <div class="card">
+        <h3>Кытай менен бизнес тажрыйбасы</h3>
+        <p>12+ жыл жеткирүүчүлөр менен иштөө, тааныш фабрикалар жана Гуанчжоу, Фошань, Иудагы текшерилген контакттар.</p>
+      </div>
+      <div class="card">
+        <h3>Жеке мамиле</h3>
+        <p>Ар бир кардар менен алдын ала ага эмне актуалдуу экенин талкуулайбыз жана маршрутту анын багытына ылайык түзөбүз — баарын бир шаблон менен алып жүрбөйбүз.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap" style="text-align:center">
+    <h2>Орунду <span class="accent">брондоо</span></h2>
+    <p class="lead">Учуу 15-октябрь · Бардыгы 8 орун · Алдын ала төлөм 50%</p>
+    <div style="margin:28px 0">
+      <a href="https://www.instagram.com/tariel_abdykasymov/" target="_blank" class="btn btn-red">Instagram'га жазуу</a>
+      <a href="https://wa.me/996500958989" target="_blank" class="btn btn-ghost">WhatsApp'ка жазуу</a>
+    </div>
+    <p class="muted">Instagram: @tariel_abdykasymov · @motocity.kg</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Кытайга бизнес-тур · Кантон көргөзмөсү 2026 · Гуанчжоу — Фошань — Иу<br>
+    Иса Ахунбаев 180, Бишкек · <a href="https://wa.me/996500958989" target="_blank">WhatsApp: +996 500 958 989</a><br>
+    <a href="#">Жогору ↑</a>
+  </div>
+</footer>
+
+</body>
+</html>
